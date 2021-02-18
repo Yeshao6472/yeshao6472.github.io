@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-flash.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"localhost","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="嫲嫲再也不用担心写作文不会引经据典了！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一言好句获取">
+<meta property="og:url" content="http://localhost/2021/02/10/yi-yan-hao-ju-huo-qu/index.html">
+<meta property="og:site_name" content="Ye Shao Site">
+<meta property="og:description" content="嫲嫲再也不用担心写作文不会引经据典了！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/10/wmfu9QvKngbqI8P.png">
+<meta property="og:image" content="https://i.loli.net/2021/02/10/aGDNJL6Xxu8PShi.png">
+<meta property="og:image" content="https://i.loli.net/2021/02/10/wmfu9QvKngbqI8P.png">
+<meta property="og:image" content="https://i.loli.net/2021/02/10/Cpmt2GjanqBQXZx.png">
+<meta property="article:published_time" content="2021-02-10T13:44:39.000Z">
+<meta property="article:modified_time" content="2021-02-18T02:47:15.706Z">
+<meta property="article:author" content="叶少">
+<meta property="article:tag" content="杂谈">
+<meta property="article:tag" content="Python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/10/wmfu9QvKngbqI8P.png">
+
+<link rel="canonical" href="http://localhost/2021/02/10/yi-yan-hao-ju-huo-qu/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>一言好句获取 | Ye Shao Site</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Ye Shao Site</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">叶少在腾讯云COS上的站点</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-friendlink">
+
+    <a href="/friendlink/" rel="section"><i class="fa fa-fw fa-address-book"></i>友情链接</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://localhost/2021/02/10/yi-yan-hao-ju-huo-qu/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://i.loli.net/2021/02/07/9J5Lg1SQO27juUV.jpg">
+      <meta itemprop="name" content="Ye Shao">
+      <meta itemprop="description" content="Lsy，爱你♥。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ye Shao Site">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          一言好句获取
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-02-10 21:44:39" itemprop="dateCreated datePublished" datetime="2021-02-10T21:44:39+08:00">2021-02-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-02-18 10:47:15" itemprop="dateModified" datetime="2021-02-18T10:47:15+08:00">2021-02-18</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://i.loli.net/2021/02/10/wmfu9QvKngbqI8P.png"><br>嫲嫲再也不用担心写作文不会引经据典了！</p>
+<a id="more"></a>
+
+
+<h1 id="关于一言"><a href="#关于一言" class="headerlink" title="关于一言"></a>关于一言</h1><p>一言官网 <a target="_blank" rel="noopener" href="https://hitokoto.cn/">https://hitokoto.cn</a><br>接口文档<a target="_blank" rel="noopener" href="https://developer.hitokoto.cn/sentence/">https://developer.hitokoto.cn/sentence/</a><br>星辰api官网：<a target="_blank" rel="noopener" href="https://xsot.cn/">https://xsot.cn</a></p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    Author: 叶哥哥</span></span><br><span class="line"><span class="string">    Copyright: 叶哥哥</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">   ChangeLog</span></span><br><span class="line"><span class="string">   |1. 两个源之间使用两个函数分开，简化写法</span></span><br><span class="line"><span class="string">   |2. 把xsot.cn的接口添加时间（时间戳）转换成可视化时间</span></span><br><span class="line"><span class="string">   |3. y优化正文显示</span></span><br><span class="line"><span class="string">   |</span></span><br><span class="line"><span class="string">   |&quot;</span></span><br><span class="line"><span class="string">   |</span></span><br><span class="line"><span class="string">   |</span></span><br><span class="line"><span class="string">   |</span></span><br><span class="line"><span class="string">   |</span></span><br><span class="line"><span class="string">   |</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fromxsot</span>():</span></span><br><span class="line">    url=<span class="string">&#x27;https://api.xsot.cn/sentence/&#x27;</span> <span class="comment">#请求（不带参数）</span></span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="string">&quot;|  类型  |  输入 | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|--------|-------| \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  动画  |   a   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  漫画  |   b   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  游戏  |   c   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  文学  |   d   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  原创  |   e   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|来自网络|   f   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  其他  |   g   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  影视  |   h   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  诗词  |   i   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;| 网易云 |   j   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  哲学  |   k   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  随机  |  其他 | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|--------|-------| \n&quot;</span></span><br><span class="line">    <span class="string">&quot;&quot;</span>) <span class="comment">#输出所有类型</span></span><br><span class="line"></span><br><span class="line">    stype=<span class="built_in">input</span>(<span class="string">&#x27;选择类型：&#x27;</span>) <span class="comment">#让用户输入类型</span></span><br><span class="line">    sencode=<span class="string">&#x27;json&#x27;</span> </span><br><span class="line"></span><br><span class="line">    req=url+<span class="string">&#x27;?cat=&#x27;</span>+stype+<span class="string">&#x27;&amp;encode=&#x27;</span>+sencode <span class="comment">#发送请求链接（带参数）</span></span><br><span class="line">    print(<span class="string">&quot;请求地址：&quot;</span>+req+<span class="string">&quot;\n\n\n&quot;</span>) </span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        get=requests.get(url=req,timeout=<span class="number">30</span>) <span class="comment">#requests库发送get请求</span></span><br><span class="line">    <span class="keyword">except</span> TimeoutError:</span><br><span class="line">        print(<span class="string">&#x27;网络连接超时，请检查网络连接或者更换源！\n\n&#x27;</span>)</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        print(<span class="string">&#x27;请求失败 - 未知错误&#x27;</span>)</span><br><span class="line">    <span class="comment">#print(get.text+&quot;\n\n\n&quot;) #打印返回的值</span></span><br><span class="line"></span><br><span class="line">    result=json.loads(get.text) <span class="comment">#把返回的json格式转换python字典</span></span><br><span class="line"></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;时间戳的转换&#x27;&#x27;&#x27;</span></span><br><span class="line">    add_time_unchange=time.localtime(<span class="built_in">int</span>(result[<span class="string">&#x27;created_at&#x27;</span>]))</span><br><span class="line">    add_time=time.strftime(<span class="string">&#x27;%Y-%m-%d %H:%M:%S&#x27;</span>,add_time_unchange)</span><br><span class="line"></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;打印结果&#x27;&#x27;&#x27;</span></span><br><span class="line">    print(<span class="string">&#x27;一言唯一标识：&#x27;</span>+result[<span class="string">&#x27;uuid&#x27;</span>])</span><br><span class="line">    print(<span class="string">&#x27;\n&#x27;</span>+result[<span class="string">&#x27;sentence&#x27;</span>]+<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">    print(<span class="string">&#x27;句子类型：&#x27;</span>+result[<span class="string">&#x27;type&#x27;</span>])</span><br><span class="line">    print(<span class="string">&#x27;出处：&#x27;</span>+result[<span class="string">&#x27;from&#x27;</span>])</span><br><span class="line">    print(<span class="string">&#x27;作者：&#x27;</span>+result[<span class="string">&#x27;from_who&#x27;</span>])</span><br><span class="line">    print(<span class="string">&#x27;添加时间：&#x27;</span>+add_time)</span><br><span class="line"><span class="comment"># fromxsot()</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">frommain</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    从一言的主站获取。</span></span><br><span class="line"><span class="string">    官方接口。</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    url=<span class="string">&#x27;https://v1.hitokoto.cn/&#x27;</span></span><br><span class="line">    print(<span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="string">&quot;|  类型  |  输入 | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|--------|-------| \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  动画  |   a   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  漫画  |   b   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  游戏  |   c   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  文学  |   d   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  原创  |   e   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|来自网络|   f   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  其他  |   g   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  影视  |   h   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  诗词  |   i   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;| 网易云 |   j   | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|  哲学  |   k   | \n&quot;</span></span><br><span class="line">    <span class="comment">#&quot;| 抖机灵 |   l   | \n&quot; get请求过去总是返回错误提示没有句子，估计这个挂了</span></span><br><span class="line">    <span class="string">&quot;|  随机  |  留空 | \n&quot;</span></span><br><span class="line">    <span class="string">&quot;|--------|-------| \n&quot;</span></span><br><span class="line">    <span class="string">&quot;&quot;</span>) <span class="comment">#输出所有类型</span></span><br><span class="line"></span><br><span class="line">    stype=<span class="built_in">input</span>(<span class="string">&quot;输入类型：&quot;</span>)</span><br><span class="line">    sencode=<span class="string">&#x27;json&#x27;</span></span><br><span class="line">    scharset=<span class="string">&#x27;utf-8&#x27;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 接口文档使用实例中，随机一种是不带c=类型的，所以输入要判断一下</span></span><br><span class="line">    <span class="keyword">if</span> stype==<span class="string">&#x27;&#x27;</span>:</span><br><span class="line">        req=url+<span class="string">&#x27;?encode=&#x27;</span>+sencode+<span class="string">&#x27;&amp;charset&#x27;</span>+scharset</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        req=url+<span class="string">&#x27;?c=&#x27;</span>+stype+<span class="string">&#x27;&amp;encode=&#x27;</span>+sencode+<span class="string">&#x27;&amp;charset=&#x27;</span>+scharset</span><br><span class="line">    </span><br><span class="line">    print(<span class="string">&#x27;请求地址：&#x27;</span>+req)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        get=requests.get(url=req,timeout=<span class="number">20</span>)</span><br><span class="line">    <span class="keyword">except</span> TimeoutError:</span><br><span class="line">        print(<span class="string">&quot;请求失败，请检查网络连接！&quot;</span>)</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        print(<span class="string">&#x27;请求失败 - 未知错误！&#x27;</span>)</span><br><span class="line">    <span class="comment">#print(get.text)</span></span><br><span class="line">    <span class="comment">#print(get.status_code)</span></span><br><span class="line">    <span class="comment">#if get.status_code!=&#x27;200&#x27;:</span></span><br><span class="line">    <span class="comment">#    print(&#x27;\n\n获取失败，请重试！\n\n&#x27;)</span></span><br><span class="line">    <span class="comment">#    exit()</span></span><br><span class="line">    <span class="comment">#else:</span></span><br><span class="line">    <span class="comment">#    pass</span></span><br><span class="line"></span><br><span class="line">    result=json.loads(get.text)</span><br><span class="line">    <span class="comment">#if result[&#x27;status&#x27;]==400:</span></span><br><span class="line">    <span class="comment">#    print(&#x27;获取失败，请重试！&#x27;)</span></span><br><span class="line">    <span class="comment">#    exit()     #配合挂了的那个食用</span></span><br><span class="line"></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;时间戳的转换&#x27;&#x27;&#x27;</span></span><br><span class="line">    add_time_unchange=time.localtime(<span class="built_in">int</span>(result[<span class="string">&#x27;created_at&#x27;</span>]))</span><br><span class="line">    add_time=time.strftime(<span class="string">&#x27;%Y-%m-%d %H:%M:%S&#x27;</span>,add_time_unchange)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&#x27;一言标识：&#x27;</span>+<span class="built_in">str</span>(result[<span class="string">&#x27;id&#x27;</span>]))<span class="comment"># 不知道为什么报错can only concatenate str (not &quot;int&quot;) to str所以就在前面加类型转换</span></span><br><span class="line">    print(<span class="string">&quot;一言唯一标识：&quot;</span>+result[<span class="string">&#x27;uuid&#x27;</span>])     </span><br><span class="line">    print(<span class="string">&#x27;\n正文：&#x27;</span>+result[<span class="string">&#x27;hitokoto&#x27;</span>]+<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">    print(<span class="string">&#x27;句子类型：&#x27;</span>+result[<span class="string">&#x27;type&#x27;</span>])</span><br><span class="line">    print(<span class="string">&#x27;出处：&#x27;</span>+result[<span class="string">&#x27;from&#x27;</span>])</span><br><span class="line">    <span class="keyword">if</span> result[<span class="string">&#x27;from_who&#x27;</span>]==<span class="literal">None</span>:</span><br><span class="line">        from_who=<span class="string">&#x27;未知作者&#x27;</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        from_who=result[<span class="string">&#x27;from_who&#x27;</span>]</span><br><span class="line">    print(<span class="string">&#x27;作者：&#x27;</span>+from_who)</span><br><span class="line">    print(<span class="string">&#x27;添加者：&#x27;</span>+result[<span class="string">&#x27;creator&#x27;</span>])</span><br><span class="line">    print(<span class="string">&#x27;添加者id：&#x27;</span>+<span class="built_in">str</span>(result[<span class="string">&#x27;creator_uid&#x27;</span>]))</span><br><span class="line">    print(<span class="string">&#x27;审核员id：&#x27;</span>+<span class="built_in">str</span>(result[<span class="string">&#x27;reviewer&#x27;</span>]))</span><br><span class="line">    print(<span class="string">&#x27;提交方式：&#x27;</span>+result[<span class="string">&#x27;commit_from&#x27;</span>])</span><br><span class="line">    print(<span class="string">&#x27;添加时间：&#x27;</span>+add_time)</span><br><span class="line">    print(<span class="string">&#x27;句子长度：&#x27;</span>+<span class="built_in">str</span>(result[<span class="string">&#x27;length&#x27;</span>]))</span><br><span class="line"><span class="comment">#frommain()</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    which=<span class="built_in">input</span>(<span class="string">&#x27;\n\n选择xsot.cn还是hitokoto.cn的源？输入1或2，或者exit退出：&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> which==<span class="string">&#x27;1&#x27;</span>:</span><br><span class="line">        fromxsot()</span><br><span class="line">    <span class="keyword">elif</span> which==<span class="string">&#x27;2&#x27;</span>:</span><br><span class="line">        frommain()</span><br><span class="line">    <span class="keyword">elif</span> which==<span class="string">&#x27;exit&#x27;</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">        exit()</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">&#x27;输入错误，请重试！&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<h1 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h1><p><img src="https://i.loli.net/2021/02/10/aGDNJL6Xxu8PShi.png" alt="效果展示 1"><br><img src="https://i.loli.net/2021/02/10/wmfu9QvKngbqI8P.png" alt="效果展示 2"></p>
+<h1 id="简单讲述原理"><a href="#简单讲述原理" class="headerlink" title="简单讲述原理"></a>简单讲述原理</h1><p>使用requests库，发送get请求到接口地址。<br>然后使用json库把返回的json转化为python字典，然后输出到控制台。</p>
+<h1 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h1><p>不知道为什么……使用pyinstaller打包之后，被Windows Defender报告为病毒？<br><img src="https://i.loli.net/2021/02/10/Cpmt2GjanqBQXZx.png" alt="Windows Defender 报告为病毒"><br>直接反馈给微软官方。</p>
+<h1 id="对了，把pyinstaller的打包方法给你们"><a href="#对了，把pyinstaller的打包方法给你们" class="headerlink" title="对了，把pyinstaller的打包方法给你们"></a>对了，把pyinstaller的打包方法给你们</h1><h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><p> <code>pyinstaller -F yourscript.py</code> 把py文件打包为单个文件的可执行程序<br> <code>pyinstaller -c -F yourscript.py</code>把文件打包成仅控制台窗口的可执行程序<br> <code>pyinstaller -i youricon.ico -F youurscript.py</code>把你的图标作为打包后程序显示的图标<br> <code>pyinstaller -F --version-file file_version.txt yourscript.py</code>打包时把版本文件加入到打包程序中</p>
+<h2 id="版本文件获取方法（Windows）"><a href="#版本文件获取方法（Windows）" class="headerlink" title="版本文件获取方法（Windows）"></a>版本文件获取方法（Windows）</h2><p> 在python的安装目录进入<code>Lib</code>目录，进入<code>site-packages</code>目录，进入<code>Pyinstaller</code>目录，进入<code>utils</code>目录，进入<code>cilutils</code>目录。<br> 当前目录下有个<code>grab_version.py</code>的文件，控制台输入<code>python grab_version.py</code>后面加上要获取的exe的绝对路径。<br> 然后生成txt文件，修改必要的基础，如文件版本，产品版本，公司名称等。</p>
+<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋"></a>彩蛋</h2><p> 后来在给快捷方式换图标时我发现，在生成的exe里面还是有原来打包默认的图标……我仔细观察打包时控制台输出，修改了这个库一处地方……预知后事如何，且听下回分解。</p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="https://picture-1302602758.cos.ap-nanjing.myqcloud.com/wechatpay.png" alt="Ye Shao 微信支付">
+        <p>微信支付</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Ye Shao
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://localhost/2021/02/10/yi-yan-hao-ju-huo-qu/" title="一言好句获取">http://localhost/2021/02/10/yi-yan-hao-ju-huo-qu/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%9D%82%E8%B0%88/" rel="tag"># 杂谈</a>
+              <a href="/tags/Python/" rel="tag"># Python</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/02/04/zong-he-su-zhi-ping-jie/" rel="prev" title="综合素质评价">
+      <i class="fa fa-chevron-left"></i> 综合素质评价
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/02/15/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E4%B8%96%E7%95%8C/" rel="next" title="hello world">
+      hello world <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E4%B8%80%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">关于一言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-number">2.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%88%E6%9E%9C"><span class="nav-number">3.</span> <span class="nav-text">效果</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E8%AE%B2%E8%BF%B0%E5%8E%9F%E7%90%86"><span class="nav-number">4.</span> <span class="nav-text">简单讲述原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E9%97%AE%E9%A2%98"><span class="nav-number">5.</span> <span class="nav-text">其他问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%B9%E4%BA%86%EF%BC%8C%E6%8A%8Apyinstaller%E7%9A%84%E6%89%93%E5%8C%85%E6%96%B9%E6%B3%95%E7%BB%99%E4%BD%A0%E4%BB%AC"><span class="nav-number">6.</span> <span class="nav-text">对了，把pyinstaller的打包方法给你们</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95"><span class="nav-number">6.1.</span> <span class="nav-text">基本用法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%88%E6%9C%AC%E6%96%87%E4%BB%B6%E8%8E%B7%E5%8F%96%E6%96%B9%E6%B3%95%EF%BC%88Windows%EF%BC%89"><span class="nav-number">6.2.</span> <span class="nav-text">版本文件获取方法（Windows）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BD%A9%E8%9B%8B"><span class="nav-number">6.3.</span> <span class="nav-text">彩蛋</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Ye Shao"
+      src="https://i.loli.net/2021/02/07/9J5Lg1SQO27juUV.jpg">
+  <p class="site-author-name" itemprop="name">Ye Shao</p>
+  <div class="site-description" itemprop="description">Lsy，爱你♥。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Yeshao6472" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Yeshao6472" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:489518531@qq.com" title="E-Mail → mailto:489518531@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ye Shao</span>
+</div>
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div> -->
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
