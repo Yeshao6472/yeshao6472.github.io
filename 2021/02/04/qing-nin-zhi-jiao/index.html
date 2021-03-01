@@ -248,7 +248,7 @@ function doDecrypt (pwd, onError) {
 	}
 }
 </script>
-<div id="enc_content" style="display:none">U2FsdGVkX1+fFPz3okjfn0+7iA1l7j3HXMu/MyZNKo+aa82QsuCf5wFCCZV0vnsP6WzjlwQ/ePy9ur+xMuKLylBqYg/eYcUllbHXX3NkwuPlCG+eJ2+T8asEiZpCDie6F/d0xALi91qSGIQzKC+p8Xklbiri0DkSTfaYJKn6Goeultzz9DjPLUsqO1nlw2i/xx8Mx5jQyufYJkdgk3uBcBKyZbgH+zcz0FIIKjt1+pnutbmuZm7eVY2GosNIdtSQNNxsPiKHndkFlqiopNK+cEkAqCGpzjpgRigkQPx+nr+xUl7W2RBDT7z3UdXnTuaNqb5bEFUZ0FmS0k+31+DWXw==</div>
+<div id="enc_content" style="display:none">U2FsdGVkX1+c7zkex0T6pBSk7F6L9MQcIxzkkDtLqFK96IsoHhl0DdC7VCZ4ymwdr+KaXanv2GTuZXjo6rlJnG5PSIEc+Ra7Q7X+FfIflJ8LKke1y11ddfWywxw02wVnNHH+LPNEWvuFb2cgqy92h57/GhbxbCVH9nt/AYDs/KMy3VvwQqDjsnpsR2FBKt5x2p3h6y7y5Ds7L40vpzhHA9uGV3A8ufRlSnV8rqWdcGg0rDNIYjVkZyHhImmUiSIB3B8HyjFyVsT78vzxWNKUyY5tf0lTkV5bAKPUyhpwDg+rSMDeq4blBW2Wlb/ta9arNYW84iZLYohPsXmWLaTh4Q==</div>
 <div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
 <script>
 var onError = function(error) {
@@ -388,14 +388,19 @@ doDecrypt(passwd, onError);
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-count">19</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -442,7 +447,7 @@ doDecrypt(passwd, onError);
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">14k</span>
+    <span title="站点总字数">16k</span>
 </div>
 
         
