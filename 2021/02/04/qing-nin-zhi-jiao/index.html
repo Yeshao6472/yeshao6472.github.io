@@ -132,6 +132,11 @@
     <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-about">
 
     <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
@@ -248,7 +253,7 @@ function doDecrypt (pwd, onError) {
 	}
 }
 </script>
-<div id="enc_content" style="display:none">U2FsdGVkX18/UAkemzCEEoviLyJ0IhCqTiUetlMfDLrhpvxOgG4Wc6Tv/GeOFIT+Pa0RlWNCtwNGfqQgzUz7mp2zGQS1721T7zc7Ggha+0JaCyMI7qlA/tZKu5nz08QFQF8+6xXmXpPzNdhp3bjBAondHv6zGDlGZWdI6bBB2T5fb/Nbk9D1FLwJQldRwE8lwtFlWjO0Jqh2uVmJxV0sRpWP/AHaA2crowNDEgO4R+sMjAugvWA/7F+PZrribkf6QbbXMumnmR8u9/lzvofY+TK5QDKeyCsDKMakIirRaymEu9Uut0a5DuVOrwzvFU1DJOrYiv/BJUESWH6MaY043Q==</div>
+<div id="enc_content" style="display:none">U2FsdGVkX19oMhxGYpgCEBHJIqkPPQCUWLRvLAKi7QU/hQ/BnkDF6w2nC294Bl5/JHo46zPbYSjYn/Y0jZZby4Rjtamz19xo9jjr4thmK1wNpSL0gt/f4REGDznTWnVYwpNrwbRYUVZxNdJGMR300IDityL1epEonmdZtw7UdlnP1Nj3nOhYiKQipyMD2WYvg1zB4tRKL0At92lS1Ig4O7EypA8QlSEXF1jvIzr//CX34JzYWmtN0sLJQttmI8KlkQ2yfzSv6FT/IST61YYHjqBRZigY43Hpa/9ILBe7lWRVB3Dr0xCjNWw0QWFg0f+H0LuqOgvvRkO+0O+q35kzlg==</div>
 <div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
 <script>
 var onError = function(error) {
@@ -388,13 +393,14 @@ doDecrypt(passwd, onError);
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-count">21</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
-        <span class="site-state-item-count">1</span>
+          
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">

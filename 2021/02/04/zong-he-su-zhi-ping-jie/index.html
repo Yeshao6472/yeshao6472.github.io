@@ -132,6 +132,11 @@
     <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-about">
 
     <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
@@ -248,7 +253,7 @@ function doDecrypt (pwd, onError) {
 	}
 }
 </script>
-<div id="enc_content" style="display:none">U2FsdGVkX19dRukwlfy2Di25k4Dc6EdHQ78p1JTtRcO5QOG8ObS/AF35482fscNVgpQMituVSRnYu5SKxb7woNbQpgKcF8PCCV00FJlxmt6YlQgYfRdpjsFqWYsbPJwTJ/hMc5c0cWCfjOp20bExuj2vypfe55Q09mKQIOmPabTSRaUL0mTOqbZ9UuAzhnvbQd6ViXYSdmYSeqmlDWsktEp7XhILnh03X9pf4nC0jQuIyXw5YjmgXlOKCex4GZ/eUGPtBGed1Ur2aUkydcJ+Pw==</div>
+<div id="enc_content" style="display:none">U2FsdGVkX1/GRCcfrbdMMxLcIxOu7nyHwrlEeXEDLyFQC60e4a/nqONLGoPnBDUXum8rytU0lF877FjTxk4imJiZoKVIQ+hXTeDYZuzuqCaxXzCvc6Dhu1MVKN2eJrrA0LxwJijaHghWD0JcQ0dCb4KWPNLU6v5PqLDz+jxrXSLzrJHLMjQr9HayhSICyJgy7QKPOolWrcYqJxlkRrnFCGqGdJ8G1yEm87U89hQzqdqTXn8zSom10dDYPmVlEcKFx++xYgGCf1Cppk2bQmvGGw==</div>
 <div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
 <script>
 var onError = function(error) {
@@ -391,13 +396,14 @@ doDecrypt(passwd, onError);
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-count">21</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
-        <span class="site-state-item-count">1</span>
+          
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
