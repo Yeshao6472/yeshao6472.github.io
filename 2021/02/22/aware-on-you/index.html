@@ -14,13 +14,12 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="/lib/pace/pace-theme-flash.min.css">
   <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"blog.greatman.ltd","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"blog.greatman.ltd","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="pwd: lin">
@@ -254,7 +253,7 @@ function doDecrypt (pwd, onError) {
 	}
 }
 </script>
-<div id="enc_content" style="display:none">U2FsdGVkX1+RV6dJYgjy3TQUEibDhcOioUJx6isTAmsAgJLDpnkQIto4sSeAXY/znldyzKna6C5GmvfeAy0gs2fU6S1WnaQQu6Yc31Guq6jX4kasNX5FgzAV5NJy9OKfdrULj6nmtWotpK3cpPGMdGPpJKAWUny9aAcBZj0aYzOtHiz73cJ+RSGUI6RBTEoOmG0BrL/0np1/4n7BMoYFtWbtRT9O3HQ6Jki6dSXqSTEK+B1A7EE2/+XqkM6lNfwJW5CEuQ968Xxem0f6Qgk2hlAUa13thr3Qh6DVOb6OCxnv16r90moYgPL2IdCHpT9Z1PAgBZ4XM7hNuhjVnLRFjOaZWXq1K6+eJZH7RsVGZwYkmtDWGebs82WFNwP2rcTusutaqHRO96y1ytz019/vra94UD74pDpb+AR85kRNnXosJf3JMCyOzT5O/IJ8hJuYTETH4fggCV1WNtvN/rrik1IWWRzVC/m4xGwQSfSCzbhGhA+esUwoXk2IgmS2p+RpJemceQDOMwynw6cVZ6MqMl116dPFaN28uqBjXwwfRJt6r5xA7kbXFgo/dyGuFzVc/85dGsHMUnrXwTPCLtqEM4hV1HRDrH6es6H3CUTyGIHtycJndSrKIUpDc+5QYDtDXu4YqbVziRR9Jbo/4Ywe3StZNeg4ocZY9aQa7ybVflwxWjmGkSvcXJFt4Cwy5yCocvMtmJnBraz7NE5lI+gEAQGu+JuAT4HN+zKVo34z8JKJR4VwVZxr7ZDXEiGApmE2npeR5wvlixFsCoFK6gHJQ/+Mu3ZSXRb2edD+rktOWTB1bBONLoDvPqxIZ5ExvnSCK+R3IbyGJeDfpcWFfbJuK01g2UeB48JK6lwaNfYd92YT5RYMOmDXCPCYsyB1AR0Wshv+4lNyfEqYnPvGzKHXmiV177gM+1HMOZ/OgqEk8M0nsg4SUwi8s4BhNxjap85VDYblXo2lr1gWHF8jkKL5OHWjIZm3L+wCgPlTxTe7uqNgViBeCvF0nijQGuXbTlu7zC1iNrEkzcvGkgEvkSK7ppVggLMDAeeltT5dfxtQ7sPdcmztrH28BARId3Rh79/QMB5oMO2iT3wlv6qYmfZfC9s5KYNcuEYhlF+qImrrrZj87kGOjRqLhLD9XVNbnUWiJ9MpheNbmKZwpTtLdhWECFFm8Dp1q7eONGGOy7L3tOfrKagtIobvhDZ31CgKvbQw9dmPYNz98YYUzBmL87yDI6V2SIfOJeCl+Rkl0VYp7/KW43lqKD+k2NYcCAbSMcL6E7A/oWCbhAJsQqE7U18UguPe0H0aijdtPuEMT3aYBWdh7vq8NxS95CGi0jqZxLOeHxykieQMlVKz3HxmA2ADVioe9BodY7VWjXaIm8gRqM8Xizi5+LT5rKZ4U4GmdRuhDyXeRrQJmEvw/0buytw/2Btj4is4bgX2qzjRxiu9LyHL0BJRncwZdxP4pP/gtMcfFU6DO2R60QKiZD4xnTlr+zwRz8+XTC/7yo7e0AtUYCHdMLR8ldyTsBQk5YLzU8GFCbQCW7hmMzQ/YL3am2Ba5vLEqdmh8LuOg9JaAI2OU08Fg1f3/Eg0T36EbHmvYQAEoxjbmvHz8zAJElh6PSfUu2K9XOYb93TCdX9CInVSGzU7zTxWUI7oJrY8yMhhLT0NPPGOGapZprQUjtlTkS/8gHf5+EiyWd+eMCApsiflScI=</div>
+<div id="enc_content" style="display:none">U2FsdGVkX1/QRLSJxB7lnmptT4bb5QCn0LTA/BSAcMLDWNkkzoMpYUon12R+0jg9p/fahCKo1P0NwN8m8/K5vBS7FbnPcQIIYJYPJCoUOSJtmsog5rWyIU1awLo5vdGZJyYcX8Dtnr93Yq5B2az3jDOC0YHNhVHacIFpxcm2M6tMPfxG4+GJkvOhv6SGCwNvVXMFmM+OD3nDUdTnk4QzFaFQIpDShl3mYoAFqJu5YbjwFQuv0Ss5BDYNcxABupf3EsaFvkVzCZaaXmo0rHeB92+j686gpgYsUJnXoIKbadNSQJ3tA+QU2qKIBdBamSPKhv01blMmW0dbX5ua315GYdOyZBaE3ActhgVj47yTbIA5iRR62wIxX+U3n8YDXFa56pkuS9aYN7qDGIRl5T8fHarrGbSp2Fx8UG4qzOCzPR5tk/O4XDiL6eY0H7665w8My5OksaqSNZoV1PYhJXnD4te1UszQIWjywcbHASt/GIe+KVQrHWs3xNBHYkh9MpKJTNthehvy1srm6gASZlIHsYI9K1Q/nEdqyKERE1F8/M67l3aIb0UgV4qdzBK5iJVvJynt7gmmtkXGhxqBDpMLIfz/lFcNrsFzzA9JxicUT6ojPwHteqJ3OetAYhq4m0jR2YzE3ZclhAXyZVUrbbcEuJFQRNQF+1yEeF2zUnnduV7xMpOJR8le+mev9nDRw4GLuxreHzosRnKc5WUwZiHQ7lNapoEC5UFxwhAJgQBgh47RQdl6u7Pkvv/GPLNwV/Uq2BJ5HaEeqRQYk2vZA+/g4ZVlFsg34d4sS3+ihTMmQg1wVimfOKbnERdNpZQ0yMBcFDvW2+NpVgEOF3BavekwmuTiIEIQ+yVYdLV3SURcjb22n5yBMOL/lsMo6A1BfsuurctqWBD/i57ICaemuSaZUL5ZMMa2z5OW3A4HNjty/pCm4mZU8ZFn9Dt2ufpEBzrwOg3HjSe2SDQ9hBFeCp19GqkHtnw8UDE1xC/Q7uV13/E2r6v+r7KNUY5E788HkeNxLHS8JOVETCiQrPmeZmM8y5mXrwPtUS4GC+ab+23y/O7JwCDzocwe3VRCPVSEhxHObLzgCO9/0AukTOk7lWXDcjyBPJzsLv2UDq08Qcu9al7XNv/4COnLVMs3BNPtUaHFw+9JlosjWwMS5bZmwS08rQ4P3g4Jc7SBXo20UQ5Maq6jgst/GM3HjCC+3m6ZG76z0Og1rCEp0j0EKsRgNUCbUb+a93nIk0A/cZEiqIXfRQlyPVZxjRXh0qFNOavJFOtYDRKjh0lty/4QAeCUv/otqz7jvyUFTq9Yed7X0cjIquIz9FwORcZrM6shs2CIs50iVH2WqjXqbmU5rHh5+KE9cRkWihLOAOXqrICTKOJYRz+pXDQv573lHBOuRsJHGBp/Nc+ZCSJhNP2Az78nPeUQOH2vmB5YGNxVFmxw7VR1Jz0NhZVImcvevoultUIodDhIWObBTOVqbJVBmYSSGhp3BIWw7cJNTJxW/MR2L9RbzBruWpGE1xPUXsVE6X9H2I5fvRBrlBSaw3OBHeXuDEmC2UDd3TA+d/fjYlOi1GLkt3O5OTdQDJFp5EUN9cP7at6iW3iAdj0p4imtIERV3RCeHU6zWz6iQqGwnAcfyfokZA7TXa52+gv03dB22J0cMeRsZoDv3SakOAKB671oF1LzsEtOr30WGpaomPR4YU5z5jI=</div>
 <div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
 <script>
 var onError = function(error) {
@@ -398,14 +397,14 @@ doDecrypt(passwd, onError);
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -458,7 +457,7 @@ doDecrypt(passwd, onError);
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">17k</span>
+    <span title="站点总字数">18k</span>
 </div>
 
         
@@ -476,8 +475,6 @@ doDecrypt(passwd, onError);
 
   
   <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 

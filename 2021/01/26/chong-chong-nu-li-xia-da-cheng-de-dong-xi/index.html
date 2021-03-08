@@ -14,13 +14,12 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="/lib/pace/pace-theme-flash.min.css">
   <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"blog.greatman.ltd","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"blog.greatman.ltd","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="Ye Shao is such a great Man!">
@@ -253,7 +252,7 @@ function doDecrypt (pwd, onError) {
 	}
 }
 </script>
-<div id="enc_content" style="display:none">U2FsdGVkX19lbI3ncHzeALKVj5WHHg6FE+k7v5D09HJedMWyaw3LQTRMq0OUhRmskYr/+hFKHzYxFx0QV6uoXnA6QxYoaUFnPXd69fHkuT6LKsN/8NYkFQzGvBQgWRIDlDBhVuz8XNk+5YK3JQT2uyTFM/5qeoNSI9khtWX+uBlo0Y/AxTi1H+WrIewPP8faepXpnxMOKcg8QeafkS3/cKNcXNlB8pOS6SiskdSRE+dMb4E6hXA0vBQctqGO9LPp2ikpZIPIxxB6Xc2wcsQwd7r6GGv0j9rIWokBcWpp0+2Y6Q7VvYttegDZlbpALXueGgr/Z4hl5sZqZ4U0RL1QFeBV+3AD69iNfOPT20VqxVSU7U+jb7asMEs+agGOsbbsImJmvJnD85iOFy7EU9DDSSvYTptsM76A1l6JzdUl/vtJ7FfxWYHhIA/HHhlBzp9IKCYhpfU6lO3s/yBxgiO1H3Jkqx11ZH3O0jnbhD0oAN9mhRGnkKUOurLEt8ogdCUCev8OrUvrYi8/WCaqxNl/z/u82rNEEPdzWAw3i+n7y6t7Jdjn01yXHb6WX31/6zVNuAgVC7nwHNxagVrXs+j+lFsu8CxNGsQur6Ds/1fnmgK63YVb4jFmr6KiWREUWkorwKBqCx9fFDQEnAtOTguKD+FJhi/qgjUMAciyHcaFkTqy9zNt29UJCHhli68WQC52Wj/J95SnqmEWKR5LdwL/HgUrKv47nDlc8SqW/8kp/d2tecl8UFeb/BmxVaF4HGON8rLFv4qdxB4EnSeuhEJbZ2+iqjn3+e9Gywu6D6HseDxpPUf+bTrZZhFFHURfAtGe/XUtCuB8z2DpnX23E2fGklgzmL6iEzjPeYxlSFnIoFGOUIhK1MFR0Uy22lXZTD3ms1iBMhlg+9/g9ba4JhoUPiQbtAKWfaVl1HbFQ9s/Xz6XuBwsyxiXc3m08VFIFHjhYhtKEdQYfWvC/6oCBenY08CPSLRG2g4FyUhoLvUIbTZ9fsONjX8MaQhuEXmofdWipA6YKoZmwe/8e7HP21SdTfx0LZrc468H0UBdasI1HNEHUJZ48fMxKORakg5b1b8G1pntQ3yEyFV58/rTXZtMQih4R3TK1JOdPNuhIEb8Ecl/i/9YdvdYoDSljpplnP37IGXyrg6N+sMrlp9pG8b+srzf/ZImDc+qIQGromH83Xu8643K0E3xLtiCHwoDdArWc3AhlUaK38BVFPO63N1Brh+yW4boIe0jiFY0o118/zjTkAGSp4DlALgTRhXKLZWtCflAWYiQjVc6vIZMZDJMeoN+KFj3rquLrbH+TnERkztoX23bE3W+oIHU0COr6T3l18iYM2uqshxj1N7xQSQWgWTDRrM0Zd+GewGVpbEavhpKpOQqaDJyUEUo9idrVlJRGdrGywD6miyDiJmeKAOM3L8yXfUQUNNR1GbJjthI2agqvtU39BOelo2hO8WbDCaH28XzPtb4Bs4qjtBQp5geWGfNR5o5w+0uMFoQHL4jgP0=</div>
+<div id="enc_content" style="display:none">U2FsdGVkX1+S5Wzc061wl/ZCqv6PEX2QhLnY45h3Ox94qHGgymKSwQzs8E+aP0l9VjmlKVtyq2gRiPFbTcH/PZLw3MzcJh5m4VrO+NjCm0HCAoI7E8G7mn8kbCNdSg13I86cAcd0k3HJfMxoSCBzpuEum7VfxkjYNoCNaBH904Sx1inhX13AHtnmxI3SeULFQ/cSImLMBSk75j+OObH09dGYLWJbeVyAczP5sXMrYR2Zz4wUth08tarAuzP4kOouR6sTsGw+gRqtq3VC7ROJ+xg3mR9on2LgxDLd7UtSykXR5gfQ1stvAQCYuwH9H3ZIritAWxXWmhWQbyL6XU1KFy04XAsGv4se4BwuKIVO6KUcIo94W3HiEdzkGaFO7EMffent9GH9Xca8JuU3o3JWTDPY9mbhSUB/04Jee4Pn2DavDjYd1GymdcLiHQ680LJcRlrqkrB8l6HD1aPljUMzzfLceoG0Z8HJEihbJhCdm2UUxnmwwXyt7WvXLlwx9hH4q6ArNT38Ruyz3Yyyj08ZkrdtuMFdwdrd7Ii5Om1oaAGCNWCMX9z9HuCwbTW1/CWhWlyo7r2em/gQ7O2Yzpy7AiSRz1nrVSCcaUltbQOHCYrv6cnoYVTpOE0wEpoFZBDEYs/g8cyPci+o5u1BqgVhD57aVUerorHjv4To1yWUzvw8+rjWik3wmwGPk6acCYIOJtRDDTvpOf49BXwE04oRllW3yvlPZMfeuIGrTh2ebIEVojKEbhhSez3RrBhvMeY5GizlC1TwbBmCq28060k8gLHtNXjI8jchnUJwdXjfM9hEtESK3jeKgs53ITtj2EGZXJwy/kgnbnZmSc17gIpyMeYlWOW3Bom8SwkM922FoYRq3le/IhvfCdTnFKBCWBCR4KpsBu+cvUcMFbY/nhnHMl29ejHBsAHFNu2xAR5wOyKtjlHP8iDinb5P4WcSm1baU4O8l6oNEYIKukvVs0sHM2KnztiwsTs8xBg1bOLS/jCKNGBKHZzXEEDrJsg3x/34qn0fqnlur6ZWjXCit2U4AqynXoS9hfF6hExPUIKkY0+VrtGp9803yP/MP9NgDQo1kHPcduWMQhJHFeUajNrs3wVOFmXbfvnZ8c+W/maca648qQIIgpPvRIxsZQxBYbROGsS9myLsUEqXobs3J/WyKhiN/mUXunjzaVT46vFEZl0IXKk8AwtGXKr9SLrRcHA92f2GylSeFpy8HYpIjSSWS8XJ6tyBAhA6Qv8m0Z4mH8+CCrHGW1R/rDBRUoO9w7gpdPquP7cPXNQW8zhtA72uR5kBrzRVd9a7ZQVKXSTJtWWCzRHMaTw1zZQNrJusHo/8ucGr7tBfJ5DaMlpjOBd4669xJbJVu/i6SxeDPleTZWIP7Z3w1e+JN6W9QeypqcPjZtqWr01dEhr2+zyhMyFkmvoikZdjWcp+myEoDj+kJYXYd2i35J8NjADNAawvBTBBkDrZa536z4PFkoppwebsAQ14MHlYiDho4BvUCmYxZUs=</div>
 <div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
 <script>
 var onError = function(error) {
@@ -396,14 +395,14 @@ doDecrypt(passwd, onError);
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -456,7 +455,7 @@ doDecrypt(passwd, onError);
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">17k</span>
+    <span title="站点总字数">18k</span>
 </div>
 
         
@@ -474,8 +473,6 @@ doDecrypt(passwd, onError);
 
   
   <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
